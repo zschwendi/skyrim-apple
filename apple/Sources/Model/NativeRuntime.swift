@@ -1,4 +1,4 @@
-#if os(iOS) && SKYRIM_NATIVE_RUNTIME
+#if (os(iOS) || os(visionOS)) && SKYRIM_NATIVE_RUNTIME
 import CoreFoundation
 import Foundation
 

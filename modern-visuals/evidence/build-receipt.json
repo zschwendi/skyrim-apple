@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "modern-terrain-v1",
+  "encoder": "ImageMagick7.1.1-47 Q16-HDRI aarch64 22763",
+  "buildHostPlatform": "macOS arm64",
+  "encoderThreads": 1,
+  "sourceArchiveCount": 3,
+  "sourceMapCount": 6,
+  "payloadFiles": 6,
+  "totalBytes": 16778064,
+  "fullMipLevels": 12,
+  "format": "legacy DXT1 DDS; no DX10 extension",
+  "nativeDimensions": [
+    2048,
+    2048
+  ],
+  "rebuildsCompared": 2,
+  "byteIdenticalRebuild": true,
+  "checks": [
+    "all output SHA256/byte counts/legacy headers/full mip payload lengths",
+    "gamma-correct color mip fixture",
+    "normal-vector renormalization fixture",
+    "DX10/missing-mip/truncated DDS negative controls rejected",
+    "all source PNG alpha is fully opaque",
+    "actual encoded DDS preview inspected by worker and approved by root"
+  ],
+  "rootPreviewApproval": "2026-11-16 America/Denver",
+  "deviceInstalled": false,
+  "gameplayAppearanceVerified": false,
+  "performanceVerified": false,
+  "retailPixelPayloadIncluded": false,
+  "sha256": {
+    "sources.lock.json": "1c6ae828a027f9100125cdb50e0795a8d46e611745202d28e1e2c8e43b1dfab2",
+    "tools/build_pack.py": "a51d0663168530ef8ea778ef6d81f10836a7268bbd859b35ce1fade03ecfa1e0",
+    "tools/test_pack.py": "2a077c45c6d35b596b300d765011761ede10de6ab1520e57709bead93d945769",
+    "pack/manifest.json": "0b8081e98ed6c2a06808b56ab55d13797b21dc44f9c0ed8d84168e9ade4f4930",
+    "evidence/target-header-compatibility.json": "5b6d6261989724188eb66dd81fef8d4c6988c46be5d21c44b5eddc752f8c8bc3"
+  }
+}

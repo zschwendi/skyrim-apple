@@ -51,6 +51,29 @@ Skyrim app / Documents /
 
 Executables, libraries, and the essential master files must match the inputs used for your local recompilation. The build tools verify this binding. The DirectX libraries and executable preparation are covered in the build guide; they are not included here.
 
+## Classic / Modern visuals
+
+New source feature (November 16): **Settings → Graphics → Classic / Modern**.
+Choose while Skyrim is closed; it applies on the next launch.
+
+Modern raises shadow detail, grass, draw distances, water reflections, decals
+and filtering. Native iOS/visionOS builds also bundle a small **2K terrain
+starter**: dirt, paths and pine-forest ground with matched DirectX normal maps
+(six DDS files, about 16 MiB on disk). Classic restores the previous managed
+settings and texture files, preserving user edits and verified backups. Resolution,
+controls, audio and saves remain separate from this switch.
+
+The materials are independent **ambientCG CC0** assets. No Nexus login, external
+download or runtime plugin is needed. See [coverage, credits and reproducible
+texture build](modern-visuals/README.md) and [profile behavior](graphics-profiles/README.md).
+This is selected terrain coverage, not a whole-game art replacement. Ray tracing
+and mesh replacement are not implemented.
+
+The configuration/asset transaction has host tests and iPhoneOS/xros SDK checks.
+The physical build described below remains the historical gameplay baseline;
+these new source features still need in-game appearance/performance acceptance.
+No new ready-to-install binary or Bethesda game assets are published here.
+
 ## Launcher, saves, and settings
 
 The single-title launcher uses original smoke-gray artwork with white and gold accents, separate settings, and an input gate, inspired by [Dark Eco](https://github.com/zschwendi/dark-eco). The app icon is original artwork; it does not use Skyrim's logo or extracted game art.
@@ -74,7 +97,7 @@ This is initial gameplay acceptance, not a full-game or performance certificatio
 - DualSense haptics and a PlayStation/Xbox button-prompt setting are in development and are not yet accepted in this baseline.
 - In-game save/reload, cross-device sync, a full controller-disconnect/background test matrix, and prolonged thermal/performance testing remain to be completed on the physical iPad.
 - The observed game rendered at **1210×834**, rather than the display's full pixel resolution. First-run shader compilation can affect smoothness; no steady-state frame-rate benchmark is claimed.
-- DLC, mods, Skyrim Script Extender, and alternative executables are untested.
+- DLC, external mods, Skyrim Script Extender, and alternative executables are untested. The bundled terrain installer has host/SDK checks; physical visuals remain pending.
 - iPhone and native Vision Pro gameplay remain unverified. The Vision Pro work will establish windowed gameplay before immersive acceptance, with separate stereo/head-tracking and input checks.
 
 ## Troubleshooting

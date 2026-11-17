@@ -39,6 +39,9 @@ targetTemplates:
       - path: Sources
       - path: ../macos/launcher/SmokeBackground.metal
       - path: Resources/Common.xcassets
+      - path: ../modern-visuals/pack
+        type: folder
+        buildPhase: resources
     settings:
       base:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
@@ -83,6 +86,7 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.zschwendi.skyrim.launcher
+        CURRENT_PROJECT_VERSION: "8"
         TARGETED_DEVICE_FAMILY: "1,2"
         SUPPORTS_MACCATALYST: false
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: false

@@ -19,6 +19,7 @@ extension Image {
     }
 }
 
+@MainActor
 enum LauncherPlatform {
     #if os(macOS)
     static let name = "Mac"
@@ -362,6 +363,12 @@ final class LauncherModel: ObservableObject {
 
     func play() {
         guard canPlay, session == .idle else { return }
+        do {
+            try GraphicsVisualModeCoordinator.forLauncher(self).prepareForLaunch()
+        } catch {
+            errorMessage = error.localizedDescription
+            return
+        }
         #if os(macOS)
         guard let checkout else { return }
         // Seal saves before the runtime can open them; it stays sealed through pauses.

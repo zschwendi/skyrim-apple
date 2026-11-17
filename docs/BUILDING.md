@@ -61,7 +61,7 @@ python3 ipad/build.py prepare --game-dir /path/to/Skyrim
 
 Preparation requires `TESV.exe`, `binkw32.dll`, and the complete `Data` files. It prepares the supported `TESV_unpacked.exe`, `d3dx9_42.dll`, and `X3DAudio1_7.dll` as needed. The private `gen/input-manifest.json` records all module/data hashes, generated source hashes and recompiler hashes. Keep the original inputs available: later builds verify that binding again.
 
-Do not commit, upload, or share `gen/`, `analysis/`, staged Windows modules, or game assets. `--game-dir` on `check`, `engine`, and `export` must point to a **complete prepared folder** containing all five modules and the complete `Data` folder, such as an earlier exported folder. It cannot point directly to an unprepared depot or ordinary installation. If the original installation or depots moved, move the old `gen/` **out of the checkout** (or into ignored `macos/build/gen-previous`) and run `prepare` again. `--gen-dir` or `SKYRIM_GEN_DIR` selects an existing generated-source directory for verification/build/export; `prepare` writes the new `gen/` in the checkout. Existing generated output is preserved rather than silently regenerated.
+Do not commit, upload, or share `gen/`, `analysis/`, staged Windows modules, or Bethesda game assets. `--game-dir` on `check`, `engine`, and `export` must point to a **complete prepared folder** containing all five modules and the complete `Data` folder, such as an earlier exported folder. It cannot point directly to an unprepared depot or ordinary installation. If the original installation or depots moved, move the old `gen/` **out of the checkout** (or into ignored `macos/build/gen-previous`) and run `prepare` again. `--gen-dir` or `SKYRIM_GEN_DIR` selects an existing generated-source directory for verification/build/export; `prepare` writes the new `gen/` in the checkout. Existing generated output is preserved rather than silently regenerated.
 
 ## Build the device runtime and app
 
@@ -120,3 +120,12 @@ python3 ipad/tests/test_public_build.py
 ```
 
 These checks do not replace your device's import, launch, input, audio, save and lifecycle testing.
+
+
+## Classic / Modern resources
+
+The launcher bundles `modern-visuals/pack` as a resource folder. Its six independent
+CC0 terrain images are separate from the owned Skyrim files above. Keep the folder
+intact when generating the Xcode project. Modern needs no Nexus account or network
+download; see [coverage and credits](../modern-visuals/README.md). Native device
+visuals still need gameplay acceptance.

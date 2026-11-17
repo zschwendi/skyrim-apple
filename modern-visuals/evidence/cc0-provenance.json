@@ -1,0 +1,22 @@
+{
+  "verifiedUTC": "2026-11-17",
+  "provider": "ambientCG",
+  "license": "CC0-1.0",
+  "licenseURL": "https://docs.ambientcg.com/license/",
+  "legalCodeURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "apiDocumentationURL": "https://docs.ambientcg.com/api/v3/assets/",
+  "scope": "Official material assets and their downloadable source maps. Only technical encoding and mip generation applied.",
+  "verifiedProviderStatements": [
+    "The provider licenses all downloadable asset files under CC0 1.0 Universal.",
+    "Raw asset files may be distributed inside a game project.",
+    "Attribution is optional; this pack nevertheless records every source."
+  ],
+  "assetIDs": [
+    "Ground067",
+    "Ground103",
+    "Ground106"
+  ],
+  "retrieval": "Official public API metadata and /get download endpoints, no account or token. Identifying User-Agent and ordinary asset-page Referer supplied; redirect points to provider CDN.",
+  "licensePageSHA256": "86d690c1384e979c84fcb607c66dcd4802ff75f917a2fbef1658add632d1b11b",
+  "licensePageResolvedURL": "https://docs.ambientcg.com/license/"
+}

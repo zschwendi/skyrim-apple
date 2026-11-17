@@ -298,6 +298,7 @@ struct GraphicsSettingsView: View {
 
     var body: some View {
         Form {
+            GraphicsProfileSection(model: model)
             Section {
                 LabeledContent("Mode", value: "Windowed")
                 LabeledContent("Immersive", value: "Not available")
@@ -319,15 +320,15 @@ struct GraphicsSettingsView: View {
             }
             #else
             Section {
-                LabeledContent("Game runtime", value: "Not installed")
+                LabeledContent("Game runtime", value: model.runtimeReady ? "Ready" : (model.runtime == .nativeDevice ? "Installed · checking files" : "Not installed"))
             } header: {
                 Text("This \(LauncherPlatform.name)")
             } footer: {
-                Text("No game graphics settings can apply on this device until its runtime is installed, so none are offered here.")
+                Text(model.runtimeReady ? "Graphics profiles use this app's verified native runtime and local Skyrim preferences." : "Verify Skyrim's runtime and files before changing graphics profiles.")
             }
             #endif
             Section {
-                Text("Resolution, quality and display options are set in Skyrim's own Options menu and saved in SkyrimPrefs.ini with your profile. The original first-run preset is preserved.")
+                Text("Resolution and other options are saved in SkyrimPrefs.ini. Classic and Modern change only the managed graphics values above; your controls, audio, cloud choices and saves are preserved.")
                     .foregroundStyle(.secondary)
             } header: {
                 Text("In-Game Options")

@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "scope": "BSA metadata and DDS header numbers only; zero retail pixel payload extracted",
+  "bsaVersion": 104,
+  "assets": [
+    {
+      "destination": "textures/landscape/dirt01.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/dirt01_n.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/dirt02.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT5",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 349680,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/dirt02_n.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/dirtpath01.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/dirtpath01_n.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/pineforest01.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/pineforest01_n.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/rocks01.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT5",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 349680,
+      "headerBytesDecoded": 128
+    },
+    {
+      "destination": "textures/landscape/rocks01_n.dds",
+      "width": 512,
+      "height": 512,
+      "mips": 10,
+      "format": "DXT1",
+      "pixelFormatFlags": 4,
+      "rgbBitCount": 0,
+      "alphaMask": 0,
+      "uncompressedEntryBytes": 174904,
+      "headerBytesDecoded": 128
+    }
+  ]
+}

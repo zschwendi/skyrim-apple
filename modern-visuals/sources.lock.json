@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "modern-terrain-v1",
+  "width": 2048,
+  "height": 2048,
+  "format": "DXT1",
+  "mips": 12,
+  "encoderVersion": "7.1.1-47",
+  "licenseEvidence": "evidence/cc0-provenance.json",
+  "sources": [
+    {
+      "id": "Ground067",
+      "title": "Ground 067",
+      "assetURL": "https://ambientcg.com/a/Ground067",
+      "apiURL": "https://ambientcg.com/api/v3/assets?id=Ground067&include=title,url,downloads,maps,dimensions",
+      "downloadURL": "https://ambientcg.com/get?file=Ground067_2K-PNG.zip",
+      "resolvedURL": "https://acg-download.struffelproductions.com/file/ambientCG-Web/download/Ground067_RmtEq6YO/Ground067_2K-PNG.zip",
+      "archiveBytes": 71243916,
+      "archiveSHA256": "0fee6212ea095112df2cb44a36af6733832b86c36534df54b447a5029eeacb99",
+      "archiveFile": "Ground067_2K-PNG.zip",
+      "destinationBase": "dirt01",
+      "license": "CC0-1.0",
+      "maps": {
+        "color": {
+          "member": "Ground067_2K-PNG_Color.png",
+          "sha256": "d0916f1f0613eca0227e6bb9168366988b3f5c8271c6bb11f986fe19b3eb6464"
+        },
+        "normalDX": {
+          "member": "Ground067_2K-PNG_NormalDX.png",
+          "sha256": "bc441ec22a101958b302337e9a3283555c4235d64aeabc9eb45438caea367e44"
+        }
+      }
+    },
+    {
+      "id": "Ground103",
+      "title": "Ground 103",
+      "assetURL": "https://ambientcg.com/a/Ground103",
+      "apiURL": "https://ambientcg.com/api/v3/assets?id=Ground103&include=title,url,downloads,maps,dimensions",
+      "downloadURL": "https://ambientcg.com/get?file=Ground103_2K-PNG.zip",
+      "resolvedURL": "https://acg-download.struffelproductions.com/file/ambientCG-Web/download/Ground103_NpgmPySx/Ground103_2K-PNG.zip",
+      "archiveBytes": 76538100,
+      "archiveSHA256": "91dee59d83707a47d5c641ef193eac2473cffb7952df45bc2916aff63306acf3",
+      "archiveFile": "Ground103_2K-PNG.zip",
+      "destinationBase": "dirtpath01",
+      "license": "CC0-1.0",
+      "maps": {
+        "color": {
+          "member": "Ground103_2K-PNG_Color.png",
+          "sha256": "f4f97aff4b06c4d6ac7d1837a313fb73cf54ce54c4c059a3a017257654a7af06"
+        },
+        "normalDX": {
+          "member": "Ground103_2K-PNG_NormalDX.png",
+          "sha256": "670061ece82459dbb03603c81a27b50578c98624a19a71855211370729f6db9c"
+        }
+      }
+    },
+    {
+      "id": "Ground106",
+      "title": "Ground 106",
+      "assetURL": "https://ambientcg.com/a/Ground106",
+      "apiURL": "https://ambientcg.com/api/v3/assets?id=Ground106&include=title,url,downloads,maps,dimensions",
+      "downloadURL": "https://ambientcg.com/get?file=Ground106_2K-PNG.zip",
+      "resolvedURL": "https://acg-download.struffelproductions.com/file/ambientCG-Web/download/Ground106_3fRvqjJx/Ground106_2K-PNG.zip",
+      "archiveBytes": 76432465,
+      "archiveSHA256": "c1348fef865ce6860b86be4539cd7f3c0d574fc22372ca7b2ef5d362036b57b2",
+      "archiveFile": "Ground106_2K-PNG.zip",
+      "destinationBase": "pineforest01",
+      "license": "CC0-1.0",
+      "maps": {
+        "color": {
+          "member": "Ground106_2K-PNG_Color.png",
+          "sha256": "c97b0f8d1f58ed7919f035125fc9bcf8c8064994a4331a9d6da266e810214376"
+        },
+        "normalDX": {
+          "member": "Ground106_2K-PNG_NormalDX.png",
+          "sha256": "457fef18d59a941e1025ee75dacc5c6f3ee86d1c2b4a57527fb71ac8b0d3edac"
+        }
+      }
+    }
+  ]
+}
